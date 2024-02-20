@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/loginSignin.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+    <div class="side">
+        <div class="left">
+            <form>
+                <h2 class="center">BINE AI REVENIT</h2>
+                <p class="small center log">Vă rog introduceți datele</p>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Introdu email-ul" required>
+                <br><br>
+                <label for="parola">Parola</label>
+                <br>
+                <input type="password" name="parola" id="parola" placeholder="Introdu parola" minlength="8" required>
+                <br><br>
+                <div class="mem-forget">
+                    <div class="check">
+                        <input type="checkbox" name="memo" id="memo">
+                        <label for="memo" class="small">Ține minte pentru 30 de zile</label>
+                    </div>
+                    <a href="#" class="no-line red small">Ai uitat parola?</a>
+                </div>
+                <button class="connect bold"><a href="/index.html" class="no-line">Conectează-te</a></button>
+                <p class="small center">Nu ai cont? <a href="signIn.html" class="no-line red">Înscrie-te</a></p>
+            </form>
+        </div>
+
+        <div class="right">
+            <img src="/img/Log-in-pic.png" alt="Log In">
+        </div>
+    </div>
+    
+    
+</body>
+<script src="/script.js" defer></script>
+</html>

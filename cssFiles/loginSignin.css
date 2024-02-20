@@ -1,0 +1,180 @@
+.side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.right img{
+    height: 965px;
+    width: 980px;
+    position: absolute;
+    top: -24.5%;
+    right: 0;
+    opacity: 0.5;
+}
+
+.sign-pic img{
+    top: -19.5%;
+}
+
+.left{
+    margin-left: 20%;
+    margin-top: 4%;
+}
+
+.sign{
+    margin-top: 0%;
+}
+
+.login-logo{
+    margin-left: 5%;
+}
+
+input[type="email"], input[type="password"], input[type="text"], .connect {
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #121212;
+    color: #000;
+    padding: 5px 20px;
+    outline: none;
+    margin-top: 8px;
+}
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border: 1px solid #b60000;
+}
+
+.mem-forget, .check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+.connect{
+    width: 342px;
+    height: 50px;
+    background-color: #b60000;
+    margin-top: 32px;
+}
+
+.log{
+    margin-bottom: 32px;
+    margin-top: -10px;
+}
+
+form label{
+    font-size: 14px;
+}
+
+
+/*--------------Sign IN---------------------*/
+
+.sau hr{
+    position: relative;
+}
+
+.sau p{
+    background-color: #121212;
+    padding: 0 10px;
+    position: absolute;
+    top: 26.5%;
+    left: 27.5%;
+}
+
+.google {
+    width: 342px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.google a{
+    color: #000;
+    
+}
+
+.logo-google{
+    width: 20px;
+}
+
+.termeni{
+    justify-content: start;
+    gap: 5px;
+}
+
+/* ------------------------media--------------------------------------- */
+
+@media only screen and (max-width: 360px){
+
+    form {
+        margin-top: 40px;
+    }
+    
+    .right img{
+        display: none;
+    }
+    
+    .left{
+        margin: 0 20px;
+        padding-bottom: 40px;
+    }
+    
+    input[type="email"], input[type="password"], input[type="text"], .connect {
+        width: 300px;
+        height: 32px;
+        padding: 5px 8px;
+        margin-top: 4px;
+    }
+    
+    .mem-forget {
+        display: flex;
+        align-items: center;
+        width: 320px;
+    }
+    
+    .connect{
+        width: 100%;
+        height: 50px;
+        background-color: #b60000;
+        margin-top: 32px;
+    }
+    
+    .log{
+        margin-bottom: 32px;
+        margin-top: -10px;
+    }
+    
+    form label{
+        font-size: 12px;
+    }
+    
+    
+    /*--------------Sign IN---------------------*/
+    
+    .sau hr{
+        width: 320px;
+    }
+    
+    .sau p{
+        background-color: #121212;
+        padding: 0 10px;
+        position: absolute;
+        top: 28.5%;
+        left: 43%;
+    }
+    
+    .google {
+        width: 320px;
+    }
+}

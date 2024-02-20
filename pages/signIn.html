@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/loginSignin.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+    <div class="side">
+        <div class="left sign">
+            <form>
+                <h2 class="center">BINE AI VENIT</h2>
+                <p class="small center log">Crează-ți noul cont</p>
+
+                <button class="google">
+                    <img src="/img/google (1).png" alt="google" class="logo-google">
+                    <a class="no-line medium"
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S-670870093%3A1684301322519404&hl=ro&ifkv=Af_xneECP41RhWwLnaxQlr6uCWUBENZrJ8iCZkQOOOUbVajIrmMcMFf45VKXz6N5j5vF2oO0_NK99A&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Înregistrează-te cu Google</a>
+                        
+                </button>
+                <br><br>
+                <div class="sau">
+                    <hr>
+                    <p>sau</p>
+                </div>
+                <br>
+                <label for="nume">Nume</label>
+                <br>
+                <input type="text" name="nume" id="nume" placeholder="Introdu numele" required>
+                <br><br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Introdu email-ul" required>
+                <br><br>
+                <label for="parola">Parola</label>
+                <br>
+                <input type="password" name="parola" id="parola" placeholder="Introdu parola" required minlength="8">
+                <br><br>
+                    <div class="check termeni">
+                        <input type="checkbox" name="memo" id="memo" required>
+                        <label for="memo" class="small">Sunt de acord cu termenii și condițiile</label>
+                    </div>                
+                <button class="connect bold"><a href="/index.html" class="no-line">Înregistrează-te</a></button>
+                <p class="small center">Ai deja un cont? <a href="logIn.html" class="no-line red">Conectează-te</a></p>
+            </form>
+        </div>
+
+        <div class="right sign-pic">
+            <img src="/img/sign-in-pic.png" alt="Sign In">
+        </div>
+    </div>
+    
+    
+</body>
+<script src="/script.js" defer></script>
+</html>

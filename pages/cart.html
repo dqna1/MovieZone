@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cos de cumparaturi</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/cartCheckout.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-bars fa-xl" onclick="showMenu()" id="bar"></i>
+            <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+            <div class="menu-bar" id="menuBar">
+                <i class="fa-solid fa-xmark fa-xl" onclick="hideMenu()" id="iesi"></i>
+                <ul>
+                    <li><a href="/index.html">ACASĂ</a></li>
+                    <li><a href="bluRay.html">BLU-RAY</a></li>
+                    <li><a href="dvd.html">DVD</a></li>
+                    <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                    <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Caută produs" id="input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass fa-lg" id="icon"></i></button>
+            </div>
+            <div class="log-cart">
+                <a href="logIn.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+
+        <h2>Filmele mele</h2>
+
+        <table>
+            <tr>
+                <th id="checkbox"></th>
+                <th class="articol" colspan="2">Articol</th>
+                <th class="pret">Preț</th>
+            </tr>
+        </table>
+      <div class="cart-container">
+    
+      </div>
+        <br><hr>
+        <h4>Total</h4>
+        <div id="total">0 lei</div>
+        <div class="finish">
+                    <button class="finish-btn buy-btn"><a href="checkout.html" class="no-line">Finalizează cumpărăturile</a></button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-quote-copy">
+                    <img src="/img/Logo.svg" alt="Logo" id="logo">
+                    <p class="small light">Let our rentals be your escape</p>
+                    <p class="copyright light">Copyright 2023-2024. Toate drepturile rezervate</p>
+                </div>
+                <div class="menu-bar menu-column">
+                    <ul>
+                        <li><a href="/index.html">ACASĂ</a></li>
+                        <li><a href="bluRay.html">BLU-RAY</a></li>
+                        <li><a href="dvd.html">DVD</a></li>
+                        <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                        <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4 class="red">CONTACT</h4>
+                    <p class="small light">Strada Sarmizegetusa 48, Chișinău,<br>Republica Moldova</p>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up">
+            <a href="#up"><i class="fa-solid fa-arrow-up fa-xl" id="up-icon"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="/cart.js" defer></script>
+<script src="/script.js" defer></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All quiet on the western front</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-bars fa-xl" onclick="showMenu()" id="bar"></i>
+            <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+            <div class="menu-bar" id="menuBar">
+                <i class="fa-solid fa-xmark fa-xl" onclick="hideMenu()" id="iesi"></i>
+                <ul>
+                    <li><a href="/index.html">ACASĂ</a></li>
+                    <li><a href="bluRay.html">BLU-RAY</a></li>
+                    <li><a href="dvd.html">DVD</a></li>
+                    <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                    <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Caută produs" id="input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass fa-lg" id="icon"></i></button>
+            </div>
+            <div class="log-cart">
+                <a href="logIn.html" class="log"><i class="fa-solid fa-user" ></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="red-dot"></div>
+            </div>
+        </header>
+
+        <section class="product-section">
+            <div id="image-container">
+                <img src="/img/image 2.svg" alt="All quiet on the western front" id="image">
+            </div>
+
+            <div class="product-info">
+                <h1 id="denumire">All quiet on the western front</h1>
+                <p class="movie-desc">Experiențele terifiante și suferința unui tânăr soldat german pe frontul de vest în timpul
+                    Primului Război Mondial. Paul și tovarășii săi experimentează direct modul în care euforia inițială a războiului se
+                    transformă în disperare și frică, în timp ce se luptă pentru viața lor, și unul pe altul, în tranșee. Filmul
+                    regizorului Edward Berger se bazează pe bestsellerul cu același nume de renume mondial al lui Erich Maria Remarque.
+                </p>
+                <div class="star-view-trailer">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p><span class="red medium">4.1 </span>(4.1M Vizualizări)</p>
+                    <button class="trailer yt-modal-btn"><a href="https://youtu.be/hf8EYbVxtCY" class="no-line"
+                            target="_blank">Trailer</a></button>
+                </div>
+                <hr>
+                <div class="time-genre">
+                    <p>2h 28min 2022 Germană</p>
+                    <div class="genres">
+                        <div class="gen">Acțune</div>
+                        <div class="gen">Dramă</div>
+                        <div class="gen">Război</div>
+                    </div>
+                </div>
+
+                <p class="specification"><span class="bold">Format: </span> Blu-Ray</p>
+                <p class="specification"><span class="bold">În rolurile principale: </span> Felix Kammerer, Albrecht Schuch, Aaron Hilmer</p>
+                <p class="specification"><span class="bold">Director: </span> Edward Berger</p>
+
+                <hr>
+
+                <div class="price">
+                    <p class="price-num">200<span class="light small"> lei</span></p>
+                </div>
+                <br>
+                <div class="btns">
+                    <button class="buy-btn buy-product-btn"><a href="#" class="no-line">Cumpără</a></button>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-quote-copy">
+                    <img src="/img/Logo.svg" alt="Logo" id="logo">
+                    <p class="small light">Let our rentals be your escape</p>
+                    <p class="copyright light">Copyright 2023-2024. Toate drepturile rezervate</p>
+                </div>
+                <div class="menu-bar menu-column">
+                    <ul>
+                        <li><a href="/index.html">ACASĂ</a></li>
+                        <li><a href="bluRay.html">BLU-RAY</a></li>
+                        <li><a href="dvd.html">DVD</a></li>
+                        <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                        <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4 class="red">CONTACT</h4>
+                    <p class="small light">Strada Sarmizegetusa 48, Chișinău,<br>Republica Moldova</p>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up">
+            <a href="#up"><i class="fa-solid fa-arrow-up fa-xl" id="up-icon"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="/script.js" defer></script>
+<script src="/product.js" defer></script>
+
+</html>

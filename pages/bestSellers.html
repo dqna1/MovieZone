@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/bluDvDBestsell.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-bars fa-xl" onclick="showMenu()" id="bar"></i>
+            <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+            <div class="menu-bar" id="menuBar">
+                <i class="fa-solid fa-xmark fa-xl" onclick="hideMenu()" id="iesi"></i>
+                <ul>
+                    <li><a href="/index.html">ACASĂ</a></li>
+                    <li><a href="bluRay.html">BLU-RAY</a></li>
+                    <li><a href="dvd.html">DVD</a></li>
+                    <li><a href="bestSellers.html" class="red bold">BEST SELLERS</a></li>
+                    <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Caută produs" id="input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass fa-lg" id="icon"></i></button>
+            </div>
+            <div class="log-cart">
+                <a href="logIn.html" class="log"><i class="fa-solid fa-user" ></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </header>
+        <h3>Best Sellers</h3>
+        <div class="movie-genre-responsive">
+            <select name="filme" id="filme">
+                <option value="actiune" id="actiune">Acțiune</option>
+                <option value="animatie" id="animatie">Animație</option>
+                <option value="aventura" id="aventura">Aventură</option>
+                <option value="comedie" id="comedie">Comedie</option>
+                <option value="crima" id="crima">Crimă</option>
+                <option value="drama" id="drama">Dramă</option>
+                <option value="horror" id="horror">Horror</option>
+            </select>
+        </div>
+        <section class="bluray-movies-section">
+            <div class="movie-genre">
+                <button>Acțiune</button>
+                <button>Animație</button>
+                <button>Aventură</button>
+                <button>Comedie</button>
+                <button>Crimă</button>
+                <button>Dramă</button>
+                <button>Horror</button>
+            </div>
+
+            <div class="movies">
+                <div class="other-movies">
+
+                    <div class="button-movie">
+                        <button id="history"><img src="/img/evil-dead-rise.svg" alt="Evil Dead Rise"></button>
+                        <div class="movie-info">
+                            <p class="title">Evil Dead Rise</p>
+                            <p class="movie-price medium">220<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+
+                    <div class="button-movie">
+                        <button id="triller"><img src="/img/john-wick-4.svg" alt="John Wick 4"></button>
+                        <div class="movie-info">
+                            <p class="title">John Wick 4</p>
+                            <p class="movie-price medium">200<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+        
+                    <div class="button-movie">
+                        <button id="horror"><img src="/img/quantumania.svg" alt="Quantumania"></button>
+                        <div class="movie-info">
+                            <p class="title">Quantumania</p>
+                            <p class="movie-price medium">330<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="other-movies">
+                    <div class="button-movie">
+                        <button id="triller"><img src="/img/yellowstone.svg" alt="Yellowstone"></button>
+                        <div class="movie-info">
+                            <p class="title">Yellowstone</p>
+                            <p class="movie-price medium">300<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+
+                    <div class="button-movie">
+                        <button id="animation"><img src="/img/jesus-revolution.svg" alt="Jesus Revolution"></button>
+                        <div class="movie-info">
+                            <p class="title">Jesus Revolution</p>
+                            <p class="movie-price medium">250<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+        
+                    <div class="button-movie">
+                        <button id="action"><img src="/img/dungeons-and-dragons.svg" alt="Dungeons & Dragons"></button>
+                        <div class="movie-info">
+                            <p class="title">Dungeons & Dragons</p>
+                            <p class="movie-price medium">320<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-movies">
+
+                    <div class="button-movie">
+                        <button id="horror"><img src="/img/vacation.svg" alt="Vacation"></button>
+                        <div class="movie-info">
+                            <p class="title">Vacation</p>
+                            <p class="movie-price medium">250<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+
+                    <div class="button-movie">
+                        <button id="horror"><img src="/img/the-truman-show.svg" alt="The Truman Show"></button>
+                        <div class="movie-info">
+                            <p class="title">The Truman Show</p>
+                            <p class="movie-price medium">250<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+        
+                    <div class="button-movie">
+                        <button id="horror"><img src="/img/superman.svg" alt="Superman"></button>
+                        <div class="movie-info">
+                            <p class="title">Superman</p>
+                            <p class="movie-price medium">220<span class="light"> lei</span></p>
+                            <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="logo-quote-copy">
+                    <img src="/img/Logo.svg" alt="Logo" id="logo">
+                    <p class="small light">Let our rentals be your escape</p>
+                    <p class="copyright light">Copyright 2023-2024. Toate drepturile rezervate</p>
+                </div>
+                <div class="menu-bar menu-column">
+                    <ul>
+                        <li><a href="/index.html">ACASĂ</a></li>
+                        <li><a href="bluRay.html">BLU-RAY</a></li>
+                        <li><a href="dvd.html">DVD</a></li>
+                        <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                        <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4 class="red">CONTACT</h4>
+                    <p class="small light">Strada Sarmizegetusa 48, Chișinău,<br>Republica Moldova</p>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up">
+            <a href="#up"><i class="fa-solid fa-arrow-up fa-xl" id="up-icon"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>

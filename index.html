@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieZONE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-bars fa-xl" onclick="showMenu()" id="bar"></i>
+            <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+            <div class="menu-bar" id="menuBar">
+                <i class="fa-solid fa-xmark fa-xl" onclick="hideMenu()" id="iesi"></i>
+                <ul>
+                    <li><a href="index.html" class="red bold">ACASĂ</a></li>
+                    <li><a href="pages/bluRay.html">BLU-RAY</a></li>
+                    <li><a href="pages/dvd.html">DVD</a></li>
+                    <li><a href="pages/bestSellers.html">BEST SELLERS</a></li>
+                    <li><a href="pages/despreNoi.html">DESPRE NOI</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Caută produs" id="input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass fa-lg" id="icon"></i></button>
+            </div>
+            <div class="log-cart">
+                <a href="pages/logIn.html" class="no"><i class="fa-solid fa-user"></i></a>
+                <a href="/pages/cart.html" id="cos"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="red-dot"></div>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <div class="motto">
+                <img src="/img/LET OUR RENTALS BE YOUR ESCAPE.png" alt="">
+            </div>
+            <div class="img-cover-hero">
+                <img src="img/divergent-cover.svg" alt="Divergent" class="image">
+
+                <div class="button-movie">
+                    <img src="img/inception-cover.svg" alt="Inception" class="hide">
+                    <div class="movie-info">
+                        <p class="title">Inception</p>
+                        <p class="movie-price medium">210<span class="light"> lei</span></p>
+                        <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                    </div>
+                </div>
+                <div class="button-movie">
+                    <img src="img/thgames-cover.svg" alt="The Hunger Games" class="hide">
+                    <div class="movie-info">
+                        <p class="title">The Hunger Games</p>
+                        <p class="movie-price medium">250<span class="light"> lei</span></p>
+                        <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                    </div>
+                </div>
+                <div class="button-movie">
+                    <img src="img/avatar-cover.svg" alt="Avatar" class="hide">
+                    <div class="movie-info">
+                        <p class="title">Avatar</p>
+                        <p class="movie-price medium">310<span class="light"> lei</span></p>
+                        <button class="more"><a href="#" target="_parent">Mai mult</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-info">
+                <p class="red medium">Nr. 1 FILM DE ACȚIUNE AL ANULUI</p>
+                <h1 id="denumire">Divergent</h1>
+                <p class="movie-desc">Într-o lume împărțită de fracțiuni bazate pe virtuți, Tris află că este divergentă
+                    și nu se va potrivi. Când descoperă un complot pentru a-i distruge pe Divergenți, Tris și
+                    misterioșii Patru trebuie să afle ce îi face pe Divergenți periculoși înainte de a fi prea târziu.
+                </p>
+                
+                <div class="star-view-trailer">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p><span class="red medium">5.0 </span>(3.1M Vizualizări)</p>
+                    <button class="trailer yt-modal-btn"><a href="https://www.youtube.com/embed/sutgWjz10sM" class="no-line" target="_blank">Trailer</a></button>
+                </div>
+                <div class="price">
+                    <p class="price-num">179<span class="light small"> lei</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sale-section">
+            <div class="sale-info">
+                <h2 class="red">REDUCERE</h2>
+                <h1 id="denumire">The Maze Runner</h1>
+                <p class="movie-desc">Thomas este depus într-o comunitate de băieți după ce memoria îi este ștearsă, în
+                    curând aflând că
+                    toți sunt prinși într-un labirint care îi va cere să își unească forțele cu colegii „alergători”
+                    pentru a încerca să
+                    scape.Thomas se trezește într-un lift ciudat, cu amintiri pierdute și fără idee ce se va întâmpla.
+                    El este acceptat
+                    într-o poiană plină de alți adolescenți care își spun „Gladers”. După ce află despre Labirintul care
+                    îi înconjoară
+                    pe toți, Thomas devine obsedat să găsească o cale de ieșire, ceea ce ar putea însemna moarte sigură.
+                </p>
+                <div class="genres">
+                    <div class="gen">Acțune</div>
+                    <div class="gen">Mister</div>
+                    <div class="gen">Sci-Fi</div>
+                </div>
+                <div class="star-view-trailer">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span class="red medium">4.0 </span>(1.1M Vizualizări)</p>
+                    <button class="trailer yt-modal-btn"><a href="https://www.youtube.com/embed/AwwbhhjQ9Xk" class="no-line" target="_blank">Trailer</a></button>
+                </div>
+                <div class="price">
+                    <p class="price-num red medium">120<span class="light small red"> lei</span></p>
+                </div>
+            </div>
+            <img src="img/themazerunner-cover.svg" alt="The Maze Runner" class="image">
+        </section>
+
+        <section class="recenzii-section">
+            <h2 class="red center rec">RECENZII</h2>
+            <div id="slide">
+                <img src="img/petrachi.png" alt="Petrachi Alina">
+            </div>
+            <div class="bullets">
+                <div class="bullet"></div>
+                <div class="bullet"></div>
+            </div>
+        </section>
+    </div>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="logo-quote-copy">
+                        <img src="img/Logo.svg" alt="Logo" id="logo">
+                        <p class="small light">Let our rentals be your escape</p>
+                        <p class="copyright light">Copyright 2023-2024. Toate drepturile rezervate</p>
+                    </div>
+                    <div class="menu-bar menu-column">
+                        <ul>
+                            <li><a href="index.html">ACASĂ</a></li>
+                            <li><a href="/pages/bluRay.html">BLU-RAY</a></li>
+                            <li><a href="/pages/dvd.html">DVD</a></li>
+                            <li><a href="/pages/bestSellers.html">BEST SELLERS</a></li>
+                            <li><a href="/pages/despreNoi.html">DESPRE NOI</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h4 class="red">CONTACT</h4>
+                        <p class="small light">Strada Sarmizegetusa 48, Chișinău,<br>Republica Moldova</p>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                            <i class="fa-brands fa-twitter fa-xl"></i>
+                            <i class="fa-brands fa-square-facebook fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="up">
+                <a href="#"><i class="fa-solid fa-arrow-up fa-xl" id="up-icon"></i></a>
+            </div>
+        </footer>
+</body>
+<script src="script.js" defer></script>
+</html>

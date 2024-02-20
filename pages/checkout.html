@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cssFiles/cartCheckout.css">
+    <link rel="stylesheet" href="/cssFiles/transition.css">
+
+    <script src="https://kit.fontawesome.com/e935aa7f6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <i class="fa-solid fa-bars fa-xl" onclick="showMenu()" id="bar"></i>
+            <a href="/index.html"><img src="/img/Logo.svg" alt="Logo" id="up" class="login-logo"></a>
+            <div class="menu-bar" id="menuBar">
+                <i class="fa-solid fa-xmark fa-xl" onclick="hideMenu()" id="iesi"></i>
+                <ul>
+                    <li><a href="/index.html">ACASĂ</a></li>
+                    <li><a href="bluRay.html">BLU-RAY</a></li>
+                    <li><a href="dvd.html">DVD</a></li>
+                    <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                    <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Caută produs" id="input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass fa-lg" id="icon"></i></button>
+            </div>
+            <div class="log-cart">
+                <a href="logIn.html"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" ><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </header>
+
+        <h2>Finalizare</h2>
+        
+        <div class="comanda-plata">
+            <div class="plata">
+                <form id="form1" name="myForm" method="post" onsubmit="return validateForm()">
+                    <p class="medium">Finalizați achiziția articolului furnizând detaliile de plată pentru comanda:</p>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="petrachialina88@gmail.com" required>
+                    <br><br>
+                    <label for="nr-card">Detalii card</label>
+                    <br>
+                    <input type="text" name="nr-card" id="nr-card" placeholder="1234 5678 7890 3214" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+                    <input type="month" name="date" id="date" required>
+                    <input type="password" placeholder="CVC" id="cvc" required maxlength="3">
+                    <br><br>
+                    <label for="nume-detinator">Deținătorul cardului</label>
+                    <br>
+                    <input type="text" placeholder="Petrachi Alina" required name="nume">
+                    <br><br>
+                    <label for="adresa">Adresa de facturare</label>
+                    <br>
+                    <input type="text" name="adresa" id="adresa" placeholder="Str. Sarmizegetusa" required>
+                    <input type="text" name="oras-tara" id="oras-tara" placeholder="Chișinău" required>
+                    <input type="text" placeholder="48" id="nr-strada" required>
+                    <br><br>
+                    <input type="checkbox" name="termeni" id="termeni" required> 
+                    <label for="termeni" class="small">Sunt de acord cu termenii și condițiile</label>
+                    <br>
+                    <p>Acceptăm:</p>
+                    <div class="payment">
+                        <i class="fa-brands fa-cc-visa fa-2xl"></i>
+                        <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+                        <i class="fa-brands fa-paypal fa-2xl"></i>
+
+                    </div>
+                </form>
+            </div>
+            <img src="/img/cover-checkout.png" alt="checkout-cover" class="checkout-cover">
+        </div>
+        <br><br><hr>
+        <button type="submit" form="form1" class="efectuati buy-btn"><a href="/index.html" class="no-line term">Efectuați plata</a></button>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="logo-quote-copy">
+                        <img src="/img/Logo.svg" alt="Logo" id="logo">
+                        <p class="small light">Let our rentals be your escape</p>
+                        <p class="copyright light">Copyright 2023-2024. Toate drepturile rezervate</p>
+                    </div>
+                    <div class="menu-bar menu-column">
+                        <ul>
+                            <li><a href="/index.html">ACASĂ</a></li>
+                            <li><a href="bluRay.html">BLU-RAY</a></li>
+                            <li><a href="dvd.html">DVD</a></li>
+                            <li><a href="bestSellers.html">BEST SELLERS</a></li>
+                            <li><a href="despreNoi.html">DESPRE NOI</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h4 class="red">CONTACT</h4>
+                        <p class="small light">Strada Sarmizegetusa 48, Chișinău,<br>Republica Moldova</p>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                            <i class="fa-brands fa-twitter fa-xl"></i>
+                            <i class="fa-brands fa-square-facebook fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="up">
+                <a href="#up"><i class="fa-solid fa-arrow-up fa-xl" id="up-icon"></i></a>
+            </div>
+        </footer>
+</body>
+<script src="/script.js" defer></script>
+<script src="/cart.js" defer></script>
+</html>
